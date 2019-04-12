@@ -1,0 +1,17 @@
+def show(x,y):
+    return x,y
+lst1=[10,20,30]
+lst2=[11,22,33]
+var=map(show,lst1,lst2)
+#print(var)
+for x in var:
+    print(x)
+# using lambda
+var=map(lambda x,y:x+y,lst1,lst2)
+for x in var:
+    print(x)
+    
+C = [39.2, 36.5, 37.3, 38, 37.8] 
+F = list(map(lambda x: (float(9)/5)*x + 32, C))
+print(F)
+
